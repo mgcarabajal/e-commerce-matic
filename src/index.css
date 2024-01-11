@@ -1,4 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+.App div:not(nav) {
+text-align: center;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  align-items: flex-start!important; 
+ 
+}
+#root {
+  width: 100%!important;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
 :root {
+  padding: 0!important;
+  width: 100%!important;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -16,7 +37,19 @@ body {
   background-color: #FEC8C1;
   color:#1F271B;
 }
-
+nav {
+  overflow: hidden; 
+  padding: 10px;
+  background-color: #E5E5F5;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  
+}
 a {
   font-weight: 500;
   color: #646cff;
