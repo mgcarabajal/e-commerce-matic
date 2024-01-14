@@ -11,9 +11,9 @@ const products = [
     {
         id:'2',
         name: 'CK for women',
-        price: 5000,
+        price: 10000,
         category: 'perfume',
-        img:'https://http2.mlstatic.com/D_NQ_NP_705523-MLA45825009061_052021-O.webp',
+        img:'https://juleriaque.vtexassets.com/arquivos/ids/213077-1200-auto?v=638191453556170000&width=1200&height=auto&aspect=true',
         stock: 2,
         description: 'CK for womens'
     },
@@ -38,7 +38,7 @@ const products = [
     {
         id:'5',
         name: 'Sacacorcho Deluxe',
-        price: 2500,
+        price: 21000,
         category: 'novedad',
         img:'https://http2.mlstatic.com/D_NQ_NP_717963-MLA69220169238_052023-O.webp',
         stock: 20,
@@ -50,7 +50,7 @@ const products = [
         return new Promise ((resolve) =>{
             setTimeout(() => {
                 resolve(products)
-            }, 500)
+            }, 1000)
 
         })
     }
@@ -59,7 +59,7 @@ const products = [
         return new Promise  ((resolve) => {
             setTimeout(() => {
                 resolve(products.find(prod => prod.id === productID))
-            }, 500)
+            }, 1000)
         })
     }
 
@@ -69,7 +69,7 @@ const products = [
         return new Promise  ((resolve) => {
             setTimeout(() => {
                 resolve(products.filter(prod => prod.category === categoryId))
-            }, 500)
+            }, 1000)
         })
     }
     

@@ -1,3 +1,8 @@
 .CardItem {
     padding: 10px;
 }
+picture img {
+     width: 100%;
+     max-width: 300px;
+     height: auto;
+}
