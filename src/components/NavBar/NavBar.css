@@ -59,3 +59,16 @@ h3 {
 .logos {
     font-size: 30px;
 }
+.ActiveOption {
+  color:#646cff!important;
+}
+.ActiveOption:after {
+
+  width: 100%!important;
+  height: 100%!important;
+}
+.ActiveOption:before {
+
+  width: 100%!important;
+  height: 100%!important;
+}
