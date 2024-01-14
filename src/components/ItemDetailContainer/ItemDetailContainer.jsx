@@ -11,7 +11,7 @@ const ItemDetailContainer = () => {
 
 
     useEffect(() => {
-        getProductByID('itemID')
+        getProductByID(itemID)
         .then(response => {
             setProduct(response)
         })
@@ -21,6 +21,9 @@ const ItemDetailContainer = () => {
 
 }, [itemID]) 
 
+if(!product) {
+    return <h1>El producto no existe</h1>
+}
    return(
     <div className='ItemDetailContainer'>
         <ItemDetail {...product} />

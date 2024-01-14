@@ -1,0 +1,61 @@
+.Categories a {
+    padding:10px;
+    color: #003B4A;
+}
+h3 {
+    color:#003B4A;
+}
+
+.Categories a  {
+    margin:20px;
+    cursor: pointer;
+    position: relative;
+    padding: 10px 20px;
+    background: white;
+    font-size: 28px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: all 1s;
+  }
+  .Categories a:after, .Categories a:before {
+    content: " ";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border: 0px solid #fff;
+    transition: all 1s;
+  }
+  .Categories a:after {
+    top: -1px;
+    left: -1px;
+    border-top: 5px solid black;
+    border-left: 5px solid black;
+  }
+  .Categories a:before {
+    bottom: -1px;
+    right: -1px;
+    border-bottom: 5px solid black;
+    border-right: 5px solid black;
+  }
+  .Categories a:hover {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+  .Categories a:hover:before, .Categories a:hover:after {
+    width: 100%;
+    height: 100%;
+  }
+  .data-container {
+    background: #ffebee;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cart {
+    width: 30px;
+  }
+.logos {
+    font-size: 30px;
+}

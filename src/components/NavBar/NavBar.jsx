@@ -6,12 +6,12 @@ const  NavBar = () => {
     return (
         <nav>
             <Link to={'/'}>
-            <h3>Ecommerce Perfumes</h3>
+            <h3 className='logos'>Ecommerce Perfumes</h3>
             </Link>
             
         <div className="Categories">
-            <NavLink to={`/category/novedades`} className={({ isActive}) => isActive ? 'ActiveOption': 'Option' }>Novedades</NavLink>
-            <NavLink to={`/category/perfumes`} className={({ isActive}) => isActive ? 'ActiveOption': 'Option' }>Perfumes</NavLink>
+            <NavLink to={`/category/novedad`} className={({ isActive}) => isActive ? 'ActiveOption': 'Option' }>Novedades</NavLink>
+            <NavLink to={`/category/perfume`} className={({ isActive}) => isActive ? 'ActiveOption': 'Option' }>Perfumes</NavLink>
             <NavLink to={`/category/lenceria`} className={({ isActive}) => isActive ? 'ActiveOption': 'Option' }>Lencería</NavLink>
         </div>
         <CartWidget />
