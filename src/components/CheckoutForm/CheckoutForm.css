@@ -1,0 +1,53 @@
+.Container {
+    max-width: 400px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    background-color: #e5e5f5; /* Color de fondo del formulario */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+  }
+  .label {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .Input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .Button {
+    background: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .Button:hover {
+    background: #45a049;
+  }
+  h1 {
+    font-size: 32px; /* Tamaño de fuente */
+    margin-bottom: 20px; /* Margen inferior */
+    color: #333; /* Color del texto */
+    text-align: center; /* Alineación centrada */
+    text-transform: uppercase; /* Transformación a mayúsculas */
+    background-color: #fec8c1; /* Color de fondo */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+  }
