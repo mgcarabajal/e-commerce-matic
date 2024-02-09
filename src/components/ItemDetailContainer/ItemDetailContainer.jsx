@@ -3,6 +3,8 @@ import {useState, useEffect} from 'react'
 import  {getProductByID} from '../../asyncMock'
 import ItemDetail from '../ItemDetail/ItemDetail'
 import {useParams} from 'react-router-dom'
+import { db } from '../../services/firebase/firebaseConfig'
+import { getDoc, doc } from 'firebase/firestore'
 
 const ItemDetailContainer = () => {
     //Loader
@@ -23,17 +25,33 @@ const ItemDetailContainer = () => {
     useEffect(() => {
 
         setLoading(true)
-        
-        getProductByID(itemID)
-        .then(response => {
-            setProduct(response)
+
+        const productDocument = doc( db,'products', itemID)
+
+        getDoc(productDocument)
+        .then(queryDocumentSnapshot=> {
+            const fields = queryDocumentSnapshot.data()
+            const productAdapted = { id: queryDocumentSnapshot.id, ...fields}
+            setProduct(productAdapted)
         })
         .catch(error => {
-            console.error(error)
-        })
+                console.error(error)
+            })
         .finally (() => {
-            setLoading(false)
-        })
+                setLoading(false)
+            })
+
+        
+        // getProductByID(itemID)
+        // .then(response => {
+        //     setProduct(response)
+        // })
+        // .catch(error => {
+        //     console.error(error)
+        // })
+        // .finally (() => {
+        //     setLoading(false)
+        // })
 
 }, [itemID]) 
 
